@@ -1,8 +1,8 @@
 import React from 'react'
 import { GoPlus } from "react-icons/go";
 import { CiSearch } from "react-icons/ci";
-import DropdownLatest from '../components/dropdownLatest'
-import Table from '../components/table';
+import DropdownLatest from '../components/card/dropdownLatest'
+import Table from '../components/table/table';
 import { FaEllipsisV } from 'react-icons/fa';
 
 const ListPage = () => {

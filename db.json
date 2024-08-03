@@ -1,0 +1,211 @@
+{
+
+    "blog":[
+        {
+
+        }
+    ],
+
+    "users": [
+    {
+      "id": "1",
+      "name": "Angelique Morse",
+      "email": "benny89@yahoo.com",
+      "phoneNumber": "+46 8 123 456",
+      "role": "Content Creator",
+      "status": "Banned",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-17.webp",
+      "company": "Wuckert Inc"
+    },
+    {
+      "id": "2",
+      "name": "Ariana Lang",
+      "email": "avery43@hotmail.com",
+      "phoneNumber": "+54 11 1234-5678",
+      "role": "IT Administrator",
+      "status": "Pending",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-20.webp",
+      "company": "Feest Group"
+    },
+    {
+      "id": "3",
+      "name": "Aspen Schmitt",
+      "email": "mireya13@hotmail.com",
+      "phoneNumber": "+34 91 123 4567",
+      "role": "Financial Planner",
+      "status": "Banned",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-15.webp",
+      "company": "Kihn, Marquardt and Crist"
+    },
+    {
+      "id": "4",
+      "name": "Brycen Jimenez",
+      "email": "tyrel.greenholt@gmail.com",
+      "phoneNumber": "+52 55 1234 5678",
+      "role": "HR Recruiter",
+      "status": "Active",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-13.webp",
+      "company": "Rempel, Hand and Herzog"
+    },
+    {
+      "id": "5",
+      "name": "Chase Day",
+      "email": "joana.simonis84@gmail.com",
+      "phoneNumber": "+86 10 1234 5678",
+      "role": "Graphic Designer",
+      "status": "Banned",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-9.webp",
+      "company": "Mraz, Donnelly and Collins"
+    },
+    {
+      "id": "6",
+      "name": "Colten Aguilar",
+      "email": "dasia.jenkins@hotmail.com",
+      "phoneNumber": "+31 20 123 4567",
+      "role": "Network Engineer",
+      "status": "Pending",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-16.webp",
+      "company": "Nolan - Kunde"
+    },
+    {
+      "id": "7",
+      "name": "Cortez Herring",
+      "email": "vito.hudson@hotmail.com",
+      "phoneNumber": "+7 495 123-4567",
+      "role": "Sales Manager",
+      "status": "Pending",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-12.webp",
+      "company": "Pagac and Sons"
+    },
+    {
+      "id": "8",
+      "name": "Cristopher Cardenas",
+      "email": "lenna.bergnaum27@hotmail.com",
+      "phoneNumber": "+33 1 23456789",
+      "role": "Data Analyst",
+      "status": "Rejected",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-7.webp",
+      "company": "Altenwerth, Medhurst and Roberts"
+    },
+    {
+      "id": "9",
+      "name": "Deja Brady",
+      "email": "milo.farrell@hotmail.com",
+      "phoneNumber": "+44 20 7946 0958",
+      "role": "Project Coordinator",
+      "status": "Banned",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-3.webp",
+      "company": "Nikolaus - Leuschke"
+    },
+    {
+      "id": "10",
+      "name": "Giana Brandt",
+      "email": "dwight.block85@yahoo.com",
+      "phoneNumber": "+39 06 123 4567",
+      "role": "Business Consultant",
+      "status": "Pending",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-14.webp",
+      "company": "Dare - Treutel"
+    },
+    {
+      "id": "11",
+      "name": "Harrison Stein",
+      "email": "violet.ratke86@yahoo.com",
+      "phoneNumber": "+61 2 9876 5432",
+      "role": "Team Leader",
+      "status": "Pending",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-4.webp",
+      "company": "Hegmann, Kreiger and Bayer"
+    },
+    {
+      "id": "12",
+      "name": "Jayvion Simon",
+      "email": "nannie.abernathy70@yahoo.com",
+      "phoneNumber": "+1 202-555-0143",
+      "role": "CEO",
+      "status": "Active",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-1.webp",
+      "company": "Lueilwitz and Sons"
+    },
+    {
+      "id": "13",
+      "name": "Lainey Davidson",
+      "email": "aditya.greenfelder31@gmail.com",
+      "phoneNumber": "+49 30 123456",
+      "role": "Marketing Strategist",
+      "status": "Pending",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-16.webp",
+      "company": "Durgan - Murazik"
+    },
+    {
+      "id": "14",
+      "name": "Lawson Bass",
+      "email": "zella.hickle4@yahoo.com",
+      "phoneNumber": "+82 2 123 4567",
+      "role": "Public Relations Officer",
+      "status": "Rejected",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-9.webp",
+      "company": "Goyette and Sons"
+    },
+    {
+      "id": "15",
+      "name": "Lucian Obrien",
+      "email": "ashlynn.ohara62@gmail.com",
+      "phoneNumber": "+1 416-555-0198",
+      "role": "CTO",
+      "status": "Pending",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-2.webp",
+      "company": "Gleichner, Mueller and Tromp"
+    },
+    {
+      "id": "16",
+      "name": "Melanie Noble",
+      "email": "luella.ryan33@gmail.com",
+      "phoneNumber": "+81 3 1234 5678",
+      "role": "Product Owner",
+      "status": "Pending",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-5.webp",
+      "company": "Raynor Group"
+    },
+    {
+      "id": "17",
+      "name": "Santos Armstrong",
+      "email": "bernadine.rosenbaum97@gmail.com",
+      "phoneNumber": "+86 10 1234 5678",
+      "role": "Operations Manager",
+      "status": "Rejected",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-6.webp",
+      "company": "Grimes Inc"
+    },
+    {
+      "id": "18",
+      "name": "Sophie Jacobs",
+      "email": "aubree14@yahoo.com",
+      "phoneNumber": "+65 6 1234 5678",
+      "role": "Research Scientist",
+      "status": "Pending",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-10.webp",
+      "company": "Dibbert Inc"
+    },
+    {
+      "id": "19",
+      "name": "Trinity Barton",
+      "email": "vance40@hotmail.com",
+      "phoneNumber": "+61 3 9876 5432",
+      "role": "Administrative Assistant",
+      "status": "Rejected",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-19.webp",
+      "company": "Padberg - Bailey"
+    },
+    {
+      "id": "20",
+      "name": "Tyra Smith",
+      "email": "lorenzo.rogahn39@yahoo.com",
+      "phoneNumber": "+1 617-555-0215",
+      "role": "Customer Support Specialist",
+      "status": "Rejected",
+      "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-11.webp",
+      "company": "Heidenreich, Stokes and Parker"
+    }
+  ]
+}

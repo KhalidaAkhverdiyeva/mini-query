@@ -27,7 +27,7 @@ const FileUploader = () => {
     />
     <label
         htmlFor="fileInput"
-        className="block w-full h-[290px] bg-[#F6F7F8] rounded-[10px] relative cursor-pointer overflow-hidden"
+        className="block w-full h-[290px] bg-[#F6F7F8] rounded-[10px] hover:border-black hover:border-[1px] relative cursor-pointer overflow-hidden"
         style={{
             backgroundImage: `url('images/upload2.png')`,  
             backgroundSize: 'contain',

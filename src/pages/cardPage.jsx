@@ -1,8 +1,8 @@
 import React from 'react'
-import Cards from '../components/cards';
+import Cards from '../components/card/cards';
 import { GoPlus } from "react-icons/go";
 import { CiSearch } from "react-icons/ci";
-import DropdownLatest from '../components/dropdownLatest'
+import DropdownLatest from '../components/card/dropdownLatest'
 import { Link } from 'react-router-dom';
 
 

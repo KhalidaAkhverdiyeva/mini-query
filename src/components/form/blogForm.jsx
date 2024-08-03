@@ -65,18 +65,6 @@ const BlogForm = () => {
                         placeholder='Meta title'
                         className='p-3 pb-[30px] hover:border-black outline-none text-top text-[14px] w-full bg-transparent flex-1 border-[1px] border-gray-200 rounded-[10px]'
                     />
-                    <input
-                        type="text"
-                        placeholder='Meta description'
-                        className='p-3 pb-[60px] hover:border-black outline-none text-top text-[14px] w-full bg-transparent flex-1 border-[1px] border-gray-200 rounded-[10px]'
-                    />
-                    <input
-                        type="text"
-                        placeholder='Meta tags'
-                        className='p-3 pb-[30px] hover:border-black outline-none text-top text-[14px] w-full bg-transparent flex-1 border-[1px] border-gray-200 rounded-[10px]'
-                    />
-                  
-
                     </div>
                     
 

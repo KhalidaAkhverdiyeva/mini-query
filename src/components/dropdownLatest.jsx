@@ -18,7 +18,7 @@ const DropdownLatest = () => {
 
 
     return (
-    <div className="relative inline-block text-left py-7">
+    <div className="relative inline-block text-left ">
    
       <button
         type="button"

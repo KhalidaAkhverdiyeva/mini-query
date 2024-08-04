@@ -32,4 +32,16 @@ export const addUser = async (userData) => {
     }
 };
 
+//UPDATE USER
 
+
+export const updateUser = async (userId, updatedData) => {
+    try {
+        const response = await api.put(`/users/${userId}`, updatedData);
+        return response.data;
+    } catch (error) {
+        console.error('Error updating user:', error);
+        throw error;
+    }
+
+}

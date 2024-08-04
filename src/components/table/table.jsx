@@ -6,18 +6,32 @@ import RowsPerPageSelector from './RowsPerPageSelector';
 import { HiOutlineChevronLeft } from "react-icons/hi";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import getStatusClass from '../../helpers/statusStyles'
+import EditUserModal from '../table/EditUserModal';
 
 
 
 
 
 const Table = ({ data }) => {
-  const [showOptions, setShowOptions] = useState(null);
 
- 
+  const [showOptions, setShowOptions] = useState(null);
+  const [selectedUser, setSelectedUser] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleOptionsClick = (index) => {
-    setShowOptions(index === showOptions ? null : index);
+      setShowOptions(index === showOptions ? null : index);
   };
+
+  const handleOpenModal = (user) => {
+      setSelectedUser(user);
+      setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+      setIsModalOpen(false);
+      setSelectedUser(null);
+  };
+
 
 
 
@@ -38,15 +52,15 @@ const Table = ({ data }) => {
         </tr>
       </thead>
       <tbody>
-        {data.map((user) => {
-          return <tr className="border-b border-dashed border-gray-200 text-[14px] hover:bg-[#F4F6F8]">
+        {data.map((user, index) => {
+          return <tr key={user.id} className="border-b border-dashed border-gray-200 text-[14px] hover:bg-[#F4F6F8]">
           <td className="p-[14px]">
             <input type="checkbox" className="form-checkbox h-[20px] w-[20px] border-gray-300 rounded-sm checked:bg-green-600 checked:border-green-600 checked:accent-white" />
           </td>
           <td className="p-[14px]">
             <div className="flex items-center">
               <img
-                src={user.avatar}
+              src= {user.file}
                 alt="Angelique Morse"
                 className="rounded-full mr-4 w-[40px] h-[40px]"
               />
@@ -65,7 +79,14 @@ const Table = ({ data }) => {
             </span>
           </td>
           <td className="p-[14px] pt-[30px] flex items-center justify-end space-x-4">
-            <FaPen className='text-[17px] text-[#637381] align-middle' />
+            <FaPen onClick={() => handleOpenModal(user)} className='text-[17px] text-[#637381] align-middle cursor-pointer' />
+             {isModalOpen && (
+              <EditUserModal 
+              isOpen={isModalOpen}
+              onClose={handleCloseModal}
+              user={selectedUser}
+                  />
+                )}
             <div className="relative">
               <FaEllipsisV
                 className="text-gray-500 cursor-pointer align-middle"

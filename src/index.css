@@ -5,3 +5,8 @@
 body {
   font-family: "Public Sans", sans-serif;
 }
+
+.custom-error-message {
+  --tw-space-y-reverse: 0;
+  margin-top: 0;
+}

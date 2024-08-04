@@ -52,7 +52,7 @@ const Cards = () => {
           />
           <img
             src="https://api-prod-minimal-v6.pages.dev/assets/images/avatar/avatar-1.webp"
-            alt="Avatar"
+            alt="file "
             className="absolute top-[20px] right-[17px] w-[40px] h-[40px] rounded-full "
           />
         </div>
@@ -98,7 +98,7 @@ const Cards = () => {
           />
           <img
             src="https://api-prod-minimal-v6.pages.dev/assets/images/avatar/avatar-1.webp"
-            alt="Avatar"
+            alt="file "
             className="absolute top-[20px] right-[17px] w-[40px] h-[40px] rounded-full "
           />
         </div>
@@ -144,7 +144,7 @@ const Cards = () => {
           />
           <img
             src="https://api-prod-minimal-v6.pages.dev/assets/images/avatar/avatar-1.webp"
-            alt="Avatar"
+            alt="file "
             className="absolute top-[20px] right-[17px] w-[40px] h-[40px] rounded-full "
           />
         </div>
@@ -190,7 +190,7 @@ const Cards = () => {
           />
           <img
             src="https://api-prod-minimal-v6.pages.dev/assets/images/avatar/avatar-1.webp"
-            alt="Avatar"
+            alt="file "
             className="absolute top-[20px] right-[17px] w-[40px] h-[40px] rounded-full "
           />
         </div>
@@ -236,7 +236,7 @@ const Cards = () => {
           />
           <img
             src="https://api-prod-minimal-v6.pages.dev/assets/images/avatar/avatar-1.webp"
-            alt="Avatar"
+            alt="file "
             className="absolute top-[20px] right-[17px] w-[40px] h-[40px] rounded-full "
           />
         </div>

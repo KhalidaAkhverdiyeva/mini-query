@@ -1,14 +1,27 @@
 import React, { useState } from 'react';
 import { GoPlus } from 'react-icons/go';
-import { CiSearch } from 'react-icons/ci';
-import DropdownLatest from '../components/card/dropdownLatest';
-import Table from '../components/table/table';
+import Table from '../components/table/Table';
 import { FaEllipsisV } from 'react-icons/fa';
-import useFetchedUsers from '../services/userApiService';
+import useFetchedUsers  from '../hooks/useFetchedUsers';
+import TableSearch from '../components/table/tableSearch';
+import RoleFilter from '../components/table/RoleFilter';
+import AddUserModal from '../components/table/AddUserModal';
 
 const ListPage = () => {
   const [filter, setFilter] = useState('All');
-  const { data, error, isLoading } = useFetchedUsers(filter);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedRole, setSelectedRole] = useState('All');
+  const { data, error, isLoading, refetch } = useFetchedUsers(filter);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
 
   const statusCounts = {
     All: data?.length || 0,
@@ -21,6 +34,26 @@ const ListPage = () => {
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
   };
+
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
+
+  const handleRoleSelect = (role) => {
+    setSelectedRole(role); 
+  };
+  const filteredData = (data || []).filter(user => {
+    const matchesSearchQuery = 
+      (user.name?.toLowerCase() || '').includes(searchQuery.toLowerCase()) ||
+      (user.email?.toLowerCase() || '').includes(searchQuery.toLowerCase()) ||
+      (user.phoneNumber?.toLowerCase() || '').includes(searchQuery.toLowerCase()) ||
+      (user.company?.toLowerCase() || '').includes(searchQuery.toLowerCase()) ||
+      (user.role?.toLowerCase() || '').includes(searchQuery.toLowerCase());
+  
+    const matchesRole = selectedRole === 'All' || user.role === selectedRole;
+  
+    return matchesSearchQuery && matchesRole;
+  });
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading users.</div>;
@@ -39,10 +72,11 @@ const ListPage = () => {
           </div>
         </div>
         <div>
-          <button className='bg-[#1C252E] flex items-center text-white p-2 rounded-md'>
+          <button onClick={openModal} className='bg-[#1C252E] flex items-center text-white p-2 rounded-md'>
             <GoPlus className='text-[22px]' />
-            <span className='text-[14px] font-bold'>New post</span>
+            <span  className='text-[14px] font-bold'>New post</span>
           </button>
+          <AddUserModal isOpen={isModalOpen} onClose={closeModal} refetchUsers={refetch} />
         </div>
       </div>
 
@@ -65,18 +99,14 @@ const ListPage = () => {
           ))}
         </div>
         <div className='flex justify-between items-center py-[20px] px-[10px]'>
-          <DropdownLatest />
-          <div className='flex w-[60%] border-gray-300 rounded-md items-center border group hover:border-gray-950 px-2 py-1'>
-            <CiSearch className='text-[#919EAB] font-bold text-[22px]' />
-            <input
-              type="text"
-              placeholder='Search..'
-              className='p-2 outline-none bg-transparent flex-1'
-            />
-          </div>
+         
+          <RoleFilter onRoleSelect={handleRoleSelect}/>
+
+          < TableSearch onSearch={handleSearch}/>
+         
           <FaEllipsisV className='text-[#637381]' />
         </div>
-        <Table data={data} />
+        <Table data={filteredData} />
       </div>
     </div>
   );

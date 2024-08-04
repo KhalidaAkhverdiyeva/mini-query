@@ -14,7 +14,7 @@ const Layout = () => {
       <Sidebar/>
       <div className=" flex-1 flex flex-col">
         <Header />
-        <main className="flex-1  px-[50px] ml-[300px]">
+        <main className="flex-1  px-[46px] ml-[300px]">
           <Outlet />
         </main>
 

@@ -1,8 +1,9 @@
 import { api } from './mainApi';
-import { useQuery } from 'react-query';
 
 
-const fetchUsers = async (status) => {
+// FETCH USERZ
+
+export const fetchUsers = async (status) => {
     try {
         const response = await api.get('/users', {
             params: {
@@ -17,12 +18,18 @@ const fetchUsers = async (status) => {
 }
 
 
-const useFetchedUsers = (status) => {
-    return useQuery(['users', status], () => fetchUsers(status), {
 
-    });
-}
 
-export default useFetchedUsers;
+//ADD NEW USER 
+
+export const addUser = async (userData) => {
+    try {
+        const response = await api.post('/users', userData);
+        return response.data;
+    } catch (error) {
+        console.error('Error adding user:', error);
+        throw error;
+    }
+};
 
 

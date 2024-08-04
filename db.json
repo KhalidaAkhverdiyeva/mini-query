@@ -1,12 +1,10 @@
 {
-
-    "blog":[
-        {
-
-        }
-    ],
-
-    "users": [
+  "blog": [
+    {
+      "id": "a7cb"
+    }
+  ],
+  "users": [
     {
       "id": "1",
       "name": "Angelique Morse",
@@ -206,6 +204,60 @@
       "status": "Rejected",
       "avatar": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-11.webp",
       "company": "Heidenreich, Stokes and Parker"
+    },
+    {
+      "id": "dffc",
+      "fullName": "James Bond",
+      "phoneNumber": "+994 7071 64 35",
+      "email": "narminsamedli2001@gmail.com",
+      "company": "Spotify",
+      "role": "Mobile Developer",
+      "status": "Active"
+    },
+    {
+      "id": "f681",
+      "fullName": "James Bond",
+      "phoneNumber": "+994 7071 64 35",
+      "email": "xalide.haqverdiyeva@gmail.com",
+      "company": "netflix",
+      "role": "Mobile Developer",
+      "status": "Banned"
+    },
+    {
+      "id": "70c3",
+      "name": "Khalida Akhverdiyeva",
+      "phoneNumber": "+994 7071 64 35",
+      "email": "byoda71234@gmail.com",
+      "company": "Amazon",
+      "role": "Mobile Developer",
+      "status": "Rejected"
+    },
+    {
+      "id": "384a",
+      "name": "Ayaz Abbasov",
+      "phoneNumber": "+994 7071 64 35",
+      "email": "narminsamedli2001@gmail.com",
+      "company": "Amazon",
+      "role": "Mobile Developer",
+      "status": "Banned"
+    },
+    {
+      "id": "cc8d",
+      "name": "Ayaz Abbasov",
+      "phoneNumber": "+994 7071 64 35",
+      "email": "narminsamedli2001@gmail.com",
+      "company": "Amazon",
+      "role": "Mobile Developer",
+      "status": "Banned"
+    },
+    {
+      "id": "0c71",
+      "name": "Tela",
+      "phoneNumber": "+994 7071 64 35",
+      "email": "byoda71234@gmail.com",
+      "company": "Spotify",
+      "role": "Mobile Developer",
+      "status": "Pending"
     }
   ]
 }

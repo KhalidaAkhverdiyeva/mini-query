@@ -14,8 +14,6 @@ const Cards = () => {
   const { data, error, isLoading } = useFetchBlogs();
 
 
-  
-
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error fetching blogs: {error.message}</div>;
   return (

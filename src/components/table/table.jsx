@@ -5,7 +5,7 @@ import { FaPen } from "react-icons/fa";
 import RowsPerPageSelector from './RowsPerPageSelector';
 import { HiOutlineChevronLeft } from "react-icons/hi";
 import { HiOutlineChevronRight } from "react-icons/hi";
-import getStatusClass from '../../helpers/statusStyles';
+import {getStatusClass}  from '../../helpers/statusStyles';
 import UpdateModal from './UpdateModal';
 import useDeleteUser from '../../hooks/useDeleteUser'; 
 import ConfirmationModal from '../table/ConformationModal'; 

@@ -36,6 +36,7 @@ const ListPage = () => {
   };
 
   const handleSearch = (query) => {
+
     setSearchQuery(query);
   };
 
@@ -51,9 +52,14 @@ const ListPage = () => {
       (user.role?.toLowerCase() || '').includes(searchQuery.toLowerCase());
   
     const matchesRole = selectedRole === 'All' || user.role === selectedRole;
-  
-    return matchesSearchQuery && matchesRole;
+    const matchesStatus = filter === 'All' || user.status === filter;
+
+   
+    return matchesSearchQuery && matchesRole && matchesStatus;
   });
+  console.log(filteredData,'hiiiiiii')
+  
+  
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading users.</div>;
@@ -81,7 +87,7 @@ const ListPage = () => {
       </div>
 
       <div className='-[1px] border-gray-300 shadow-custom rounded-[20px]'>
-        <div className='flex gap-[30px] py-[20px] px-4 border-b-[1px] border-b-gray-200'>
+        <div className='cursor-pointer flex gap-[30px] py-[20px] px-4 border-b-[1px] border-b-gray-200'>
           {['All', 'Active', 'Pending', 'Banned', 'Rejected'].map((status) => (
             <div className='flex gap-1' key={status}>
               <div

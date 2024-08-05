@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaEllipsisV } from 'react-icons/fa';
 import { IoMdArrowUp } from "react-icons/io";
 import { FaPen } from "react-icons/fa";
@@ -11,13 +11,16 @@ import useDeleteUser from '../../hooks/useDeleteUser';
 import ConfirmationModal from '../table/ConformationModal'; 
 
 const Table = ({ initialData }) => {
+  const [data, setData] = useState(initialData);
     const [showOptions, setShowOptions] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false); 
     const [selectedUser, setSelectedUser] = useState(null);
-    const [data, setData] = useState(initialData);
-
     const { mutate: deleteUser, isLoading: isDeleting } = useDeleteUser();
+
+    useEffect(() => {
+      setData(initialData);
+  }, [initialData]);
 
     const openModal = (user) => {
         setIsModalOpen(true);

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const ImageUploader = ({ onChange, value, name }) => {
-  const [preview, setPreview] = useState(value || null);
+  const [preview, setPreview] = useState(value || '')
 
   useEffect(() => {
-    setPreview(value || null);
+    setPreview(value || '');
   }, [value]);
 
   const handleFileChange = (e) => {

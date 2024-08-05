@@ -106,7 +106,7 @@ const ListPage = () => {
          
           <FaEllipsisV className='text-[#637381]' />
         </div>
-        <Table data={filteredData} />
+        <Table initialData={filteredData} />
       </div>
     </div>
   );

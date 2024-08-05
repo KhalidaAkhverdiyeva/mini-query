@@ -45,3 +45,19 @@ export const updateUser = async (userId, updatedData) => {
     }
 
 }
+
+//DELETE USER 
+
+
+export const deleteUser = async (userId) => {
+    try {
+
+        const response = await api.delete(`/users/${userId}`);
+        return response.data;
+
+    } catch (error) {
+
+        console.error('Error deleting user:', error);
+        throw error;
+    }
+};

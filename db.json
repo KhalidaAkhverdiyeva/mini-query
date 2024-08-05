@@ -1,8 +1,49 @@
 {
   "blog": [
-    {
-      "id": "a7cb"
-    }
+    [
+      {
+        "id": "1",
+        "status": "Draft",
+        "title": "The Future of Renewable Energy: Innovations and Challenges Ahead",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been..",
+        "image": "https://api-prod-minimal-v6.pages.dev/assets/images/cover/cover-1.webp"
+      },
+      {
+        "id": "2",
+        "status": "Published",
+        "title": "Exploring the Impact of Artificial Intelligence on Modern Healthcare",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been..",
+        "image": "https://api-prod-minimal-v6.pages.dev/assets/images/cover/cover-2.webp"
+      },
+      {
+        "id": "3",
+        "status": "Published",
+        "title": "Climate Change and Its Effects on Global Food Security",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been..",
+        "image": "https://api-prod-minimal-v6.pages.dev/assets/images/cover/cover-3.webp"
+      },
+      {
+        "id": "4",
+        "status": "Draft",
+        "title": "The Rise of Remote Work: Benefits, Challenges, and Future Trends",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been..",
+        "image": "https://api-prod-minimal-v6.pages.dev/assets/images/cover/cover-4.webp"
+      },
+      {
+        "id": "5",
+        "status": "Published",
+        "title": "Understanding Blockchain Technology: Beyond Cryptocurrency",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been..",
+        "image": "https://api-prod-minimal-v6.pages.dev/assets/images/cover/cover-5.webp"
+      },
+      {
+        "id": "6",
+        "status": "Published",
+        "title": "Mental Health in the Digital Age: Navigating Social Media and Well-being",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been..",
+        "image": "https://api-prod-minimal-v6.pages.dev/assets/images/cover/cover-6.webp"
+      }
+    ]
   ],
   "users": [
     {
@@ -114,16 +155,6 @@
       "status": "Pending",
       "file": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-4.webp",
       "company": "Hegmann, Kreiger and Bayer"
-    },
-    {
-      "id": "12",
-      "name": "Jayvion Simon",
-      "email": "nannie.abernathy70@yahoo.com",
-      "phoneNumber": "+1 202-555-0143",
-      "role": "CEO",
-      "status": "Active",
-      "file": "https://pub-c5e31b5cdafb419fb247a8ac2e78df7a.r2.dev/mock/assets/images/avatar/avatar-1.webp",
-      "company": "Lueilwitz and Sons"
     },
     {
       "id": "13",

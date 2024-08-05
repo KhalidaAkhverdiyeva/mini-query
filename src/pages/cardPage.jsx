@@ -1,14 +1,37 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Cards from '../components/card/cards';
 import { GoPlus } from "react-icons/go";
-import { CiSearch } from "react-icons/ci";
 import DropdownLatest from '../components/card/dropdownLatest'
 import { Link } from 'react-router-dom';
+import FormSearch from '../components/form/FormSearch';
+import { useFetchBlogs } from '../services/blogApiService';
 
 
 
 
 const CardPage = () => {
+
+  const [searchQuery, setSearchQuery] = useState('');
+  const {data, error, isLoading, refetch } = useFetchBlogs();
+
+  const handleSearch = (query) => {
+
+    setSearchQuery(query);
+  };
+
+  const blogs = Array.isArray(data) && Array.isArray(data[0]) ? data[0] : data || [];
+
+  const filteredBlogs = blogs.filter(blog => {
+    const matchesSearchQuery =
+      (blog.title?.toLowerCase() || '').includes(searchQuery.toLowerCase()) ||
+      (blog.content?.toLowerCase() || '').includes(searchQuery.toLowerCase()) ||
+      false; 
+  
+   
+    return matchesSearchQuery ;
+  });
+ 
+ 
   return (
     <div >
       <div className='flex justify-between py-[40px]'>
@@ -35,14 +58,7 @@ const CardPage = () => {
       </div>
 
       <div className='flex justify-between items-center'>
-        <div className='flex w-[260px] border-gray-300 rounded-md items-center border group hover:border-gray-950 px-2 py-1 '>
-        <CiSearch className='text-[#919EAB] font-bold text-[22px]' />
-        <input
-          type="text"
-          placeholder='Search..'
-          className='p-2 outline-none bg-transparent flex-1'
-        />
-      </div>
+       <FormSearch onSearch={handleSearch}/>
         <DropdownLatest/>
       </div>
       <div className='flex gap-[30px] py-[40px]'>
@@ -59,7 +75,7 @@ const CardPage = () => {
           <div className='bg-[#EDEFF1] font-[600]  text-[12px] flex justify-center items-center w-[24px] h-[24px] rounded-md'>7</div>
         </div>
       </div>
-      <Cards/>
+      <Cards filtered = {filteredBlogs}/>
      
     </div>
   )

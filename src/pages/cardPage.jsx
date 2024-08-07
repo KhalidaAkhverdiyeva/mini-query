@@ -30,7 +30,7 @@ const CardPage = () => {
    
     return matchesSearchQuery ;
   });
- 
+
  
   return (
     <div >
